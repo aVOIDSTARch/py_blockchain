@@ -46,7 +46,7 @@ class Blockchain(object):
     @staticmethod
     def valid_block(block):
         # Checks if a block's hash sterts with 0000
-        return blcok["hash"].startswith("0000")
+        return block["hash"].startswith("0000")
 
     def proof_of_work(self):
         while True:
