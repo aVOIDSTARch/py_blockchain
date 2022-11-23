@@ -12,9 +12,10 @@ class Blockchain(object):
 
         # Create the genesis block
         print("Creating genesis block.")
-        self.chain.append(self.new_block)
+        self.chain.append(self.new_block())
 
     def new_block(self):
+
         block = {
             'index': len(self.chain),
             'timestamp': datetime.utcnow().isoformat(),
